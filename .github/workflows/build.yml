@@ -2,7 +2,6 @@ name: Build
 on:
   push:
     branches:
-      - '1.18.x/*'
       - '1.19.2/*'
   pull_request:
     types: [ opened, synchronize, reopened ]
@@ -20,7 +19,7 @@ jobs:
     name: Test Server
     strategy:
       matrix:
-        serverType: [ 'fabric', 'forge' ]
+        serverType: [ 'forge' ]
     runs-on: ubuntu-latest
     timeout-minutes: 20 # Fail after 20 minutes
     steps:
