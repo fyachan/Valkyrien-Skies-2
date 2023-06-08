@@ -19,7 +19,7 @@ plugins {
     id "com.modrinth.minotaur" version "2.4.3" apply false
 
     // Java linter
-    id "checkstyle"
+    id "checkstyle" apply false
 }
 
 // Determine the version
