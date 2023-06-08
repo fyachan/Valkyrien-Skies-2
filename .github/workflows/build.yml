@@ -40,7 +40,7 @@ jobs:
         uses: actions/upload-artifact@master
         with:
           name: Build119Forge
-          path: /home/runner/work/Eureka/Eureka/forge
+          path: /home/runner/work/Valkyrien-Skies-2/Valkyrien-Skies-2/forge
 
 #       - name: Test Server
 #         uses: ValkyrienSkies/Minecraft-Architectury-Testing@v1.9
