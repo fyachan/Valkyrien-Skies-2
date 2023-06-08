@@ -31,9 +31,16 @@ jobs:
       - name: Setup Gradle & Caches
         uses: "./.github/actions/setup-gradle"
         
-      - name: Build
-        run: |
-          ./gradlew build --refresh-dependencies
+      - name: Build119
+        uses: fyachan/Minecraft-Architectury-Testing@119
+        with:
+          serverType: ${{ matrix.serverType }}
+          
+      - name : Upload artifact
+        uses: actions/upload-artifact@master
+        with:
+          name: Build119Forge
+          path: /home/runner/work/Eureka/Eureka/forge
 
 #       - name: Test Server
 #         uses: ValkyrienSkies/Minecraft-Architectury-Testing@v1.9
